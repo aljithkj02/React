@@ -1,0 +1,51 @@
+1, What is Emmets?
+A, Emmet is plugin for many popular text editors, which greatly improve our
+   html, css workflow
+
+2, Difference between Library and Framework?
+A, Library :- Library is a collection of predefined function or classes or any other 
+   properties which help us to do only a specific task.
+
+   Framework :- Framework is a collection of Libraries, Which allows us to build full fledged
+   application, for building this app it provide some set of rules, we have to follow those.
+
+3, What is CDN, why we use it?
+A, CDN stands for Content Delivery Network,
+   The primary purpose of a content delivery network (CDN) is to reduce latency,
+   or reduce the delay in communication created by a network's design. 
+   Because of the global and complex nature of the internet, communication traffic 
+   between websites (servers) and their users (clients) has to move over large physical 
+   distances. The communication is also two-way, with requests going from the 
+   client to the server and responses coming back.
+
+   Reduce page load time
+   Website traffic can decrease if your page load times are too slow. A CDN can reduce bounce rates and 
+   increase the time users spend on your site.
+
+4, why is react known as react?
+A, React is a popular JavaScript library for building user interfaces. It was created 
+   by Facebook in 2011 and released as an open-source project in 2013.
+   The library was originally called "React" because it was designed to be reactive to 
+   changes in a web page's underlying data. Instead of manipulating the DOM directly, 
+   which can be slow and error-prone, React uses a virtual DOM to represent the current 
+   state of a web page's UI. When the underlying data changes, React re-renders 
+   the virtual DOM and efficiently updates only the parts of the real DOM that need 
+   to change, resulting in faster and more efficient updates to the UI.
+
+   The name "React" also reflects the library's philosophy of building UI components 
+   as isolated, reusable units that react to changes in their input data. This approach 
+   makes it easier to reason about complex UIs and makes it possible to build large-scale 
+   applications that are easy to maintain and extend.
+
+5, what is cross origin in script tag?
+A  The crossorigin attribute sets the mode of the request to an HTTP CORS Request.
+   Web pages often make requests to load resources on other servers. 
+   Here is where CORS comes in.
+
+   A cross-origin request is a request for a resource (e.g. style sheets, iframes, images,
+   fonts, or scripts) from another domain.
+
+6, what is difference between react and reactDOM?
+A, React is a JavaScript library for building User Interfaces and ReactDOM is 
+   the JavaScript library that allows React to interact with the DOM.
+
