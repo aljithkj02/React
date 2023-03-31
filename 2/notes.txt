@@ -1,0 +1,103 @@
+1, What is bundlers?
+A, Bundlers are tools that help developers manage the dependencies of their 
+   web applications by combining multiple files and assets into a single file that can be easily served to 
+   the browser.
+
+   This can improve the performance of a web application by reducing the number of network requests required 
+   to load all the assets. Additionally, Webpack allows developers to use features such as code splitting 
+   and lazy loading to further optimize their applications.
+
+2, why do we use npm in our react app?
+A, We use npm in our React app for several reasons:
+
+   Dependency Management: NPM is a package manager that allows us to manage the dependencies of our React app. 
+   It provides a simple way to install and update packages that our app depends on, such as React, React DOM,
+   and other third-party libraries.
+
+   Scripts Management: We can use NPM to define custom scripts in our package.json file, which can help us 
+   automate common development tasks such as building, testing, and deploying our React app.
+
+   Easy Setup: When we create a new React app using a tool like Create React App, NPM is automatically 
+   installed and configured for us. This means we can start building our app right away without having to 
+   worry about setting up a package manager.
+
+   Large Package Ecosystem: NPM has a vast ecosystem of packages and libraries that we can use in our 
+   React app. This makes it easy to find and integrate third-party tools and resources into our app.
+
+   Overall, using NPM in our React app helps us manage our dependencies, automate common tasks, and take 
+   advantage of a large ecosystem of packages and libraries, which can help us build better apps faster.
+
+3, what is parcel bundle?
+A, Parcel is a web application bundler that simplifies the process of building and deploying web applications.
+   It automatically analyzes a project's dependencies and generates optimized bundles of assets, such as 
+   HTML, CSS, JavaScript, images, and more. Parcel requires minimal configuration, and it supports a wide 
+   range of modern web technologies, making it an excellent choice for developers who want to quickly and 
+   easily set up a development environment for their web applications.
+
+4, what is the differenve bw carret and tilde in package.json?
+A, In the context of the package.json file, both the caret (^) and tilde (~) characters are used to specify 
+   version ranges for a package dependency.
+
+   The caret (^) character indicates that the package manager can install any minor or patch version 
+   updates to the specified major version of the package. For example, if the package version is "^1.2.3", 
+   it means that any version of the package greater than or equal to 1.2.3 but less than 2.0.0 is acceptable.
+
+   The tilde (~) character indicates that the package manager can install any patch version updates to the 
+   specified minor version of the package. For example, if the package version is "~1.2.3", it means that 
+   any version of the package greater than or equal to 1.2.3 but less than 1.3.0 is acceptable.
+
+   In short, the difference between the caret and tilde characters is in the level of flexibility 
+   they allow for updating dependencies. The caret is more flexible, allowing for major version updates, 
+   while the tilde is more conservative, only allowing for patch version updates.
+
+5, difference between web dependencies and dependencies?
+A, In the context of a package.json file, there are two types of dependencies that can 
+   be defined: "dependencies" and "devDependencies".
+
+   "dependencies" are packages that are required for the web application to run in a production environment. 
+   These are the packages that are necessary for the application to function as intended and are included 
+   in the final production bundle. Examples of "dependencies" include React, React DOM, and Redux.
+
+   "devDependencies" are packages that are only required during the development process, such as tools for 
+   testing, linting, and building the application. These packages are not included in the final production 
+   bundle and are only used by developers during the development process. Examples of "devDependencies" 
+   include Jest, ESLint, and Babel.
+
+   In summary, "dependencies" are packages required for the web application to run in production, 
+   while "devDependencies" are packages required only during development.
+
+6, differents between packgage.json and package.lock.json?
+A, The package.json file and package-lock.json file are both used to manage dependencies in a Node.js project,
+   but they serve different purposes.
+
+   The package.json file lists the dependencies required by the project and their version ranges.  
+   It is used to install and update packages, as well as to define custom scripts and metadata for the project.
+
+   The package-lock.json file, on the other hand, is automatically generated by npm when a package is 
+   installed or updated. It contains an exact, lock-step dependency tree that ensures that every developer 
+   and every machine installing the packages will get the same dependencies with the same versions. 
+   It is used to prevent dependency conflicts and ensure that the project has a consistent set of 
+   dependencies across all environments.
+
+   In summary, the package.json file defines the dependencies and their version ranges, while the 
+   package-lock.json file provides an exact, reproducible dependency tree to ensure consistency across 
+   all environments.
+
+7, Importants things about package.json?
+A, * It's an Important file, It locks the version of dependencies.
+   * never keep this file in .gitignore 
+   * It keep track of the exact version of dependencies.
+
+8, what is intergrity in package-lock.json file?
+A, In the context of the package-lock.json file, the "integrity" field contains a cryptographic hash of 
+   the package's contents. This hash is used to verify that the package has not been tampered with or 
+   corrupted during transmission. It ensures that the package installed is exactly the same as the package 
+   that was published by the package author. This provides an additional layer of security and helps prevent 
+   malicious code from being installed.
+
+9, what is node_modules folder does?
+A, The node_modules folder is a directory in a Node.js project that contains all the external packages 
+   and modules required by the project. It allows developers to easily manage dependencies and 
+   use third-party code in their Node.js applications.
+
+
