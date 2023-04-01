@@ -100,4 +100,30 @@ A, The node_modules folder is a directory in a Node.js project that contains all
    and modules required by the project. It allows developers to easily manage dependencies and 
    use third-party code in their Node.js applications.
 
+10, How can we run parcel in our appliation with our index.html file?
+A,  npx parcel index.html
+    execute the parcel package with the entry point index.html
+    
+    npx means execute the package 
 
+11, what is Hot Module Replacement (hmr) in parcel?
+A,  HMR stands for Hot Module Replacement, which is a feature of the Parcel bundler that allows you to update
+    your code in real-time while your application is running, without needing to refresh the page. 
+    It can save you time during development by reducing the need to manually reload the page after making 
+    changes to your code.
+
+12, what is file watcher algorithm?
+A,  A file watcher algorithm is a program that monitors changes to files in a specific directory or set of 
+    directories. It continuously checks for modifications, additions, or deletions to the files and triggers 
+    an event when a change is detected. This event can be used to perform actions such as recompiling 
+    code or updating a user interface in real-time, making it a useful tool for software development and 
+    other applications where file changes need to be tracked.
+
+    It has written in C++
+
+13, What Parcel does?
+A,  * HMR - Hot Module Reloading
+    * File Watcher algorithm - C++
+    * Bundling
+    * Minify
+    * Cleaning our unnecessary code
