@@ -127,3 +127,13 @@ A,  * HMR - Hot Module Reloading
     * Bundling
     * Minify
     * Cleaning our unnecessary code
+    * It manages dev and production building
+    * It is super fast build algorithm
+    * Image optimization
+    * Caching while development
+    * Compress files
+    * Compatible with older version of browsers
+    * https on dev
+
+14, What kind of files we need to put inside .gitignore?
+A,  Anything which we can generate on server will be put inside .gitignore
