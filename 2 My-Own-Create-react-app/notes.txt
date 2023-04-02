@@ -122,7 +122,8 @@ A,  A file watcher algorithm is a program that monitors changes to files in a sp
     It has written in C++
 
 13, What Parcel does?
-A,  * HMR - Hot Module Reloading
+A,  * Created server for us
+A,  * HMR - Hot Module Replacement
     * File Watcher algorithm - C++
     * Bundling
     * Minify
@@ -134,6 +135,21 @@ A,  * HMR - Hot Module Reloading
     * Compress files
     * Compatible with older version of browsers
     * https on dev
+    * It uses constistent hashing algorithm
+    * It is a Zero config bundler
 
 14, What kind of files we need to put inside .gitignore?
 A,  Anything which we can generate on server will be put inside .gitignore
+
+15, What is Transitive depentencies?
+A,  Transitive dependencies in software development are dependencies of a library or module 
+    that are not directly required by the user, but are required by the library or module's direct 
+    dependencies. It means that the dependencies of a library/module can have their own dependencies, 
+    creating a chain of dependencies that need to be managed and resolved.
+
+    "we have our package manager which handles and take care of our Transitive depentencies of our code"
+   
+16, What is browserlists?
+A,  Browserslist is a configuration file used in web development to specify which web browsers a project 
+    should support. It helps developers avoid browser compatibility issues by allowing them to write CSS and 
+    JavaScript that works across multiple browsers and versions.
