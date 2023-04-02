@@ -153,3 +153,17 @@ A,  Transitive dependencies in software development are dependencies of a librar
 A,  Browserslist is a configuration file used in web development to specify which web browsers a project 
     should support. It helps developers avoid browser compatibility issues by allowing them to write CSS and 
     JavaScript that works across multiple browsers and versions.
+
+17, What is script types?
+A,  In JavaScript, script types refer to the different types of scripts that can be used in an HTML document,
+    such as "text/javascript", "text/typescript", "text/babel", etc. These script types are used to specify 
+    the type of script and its content to the browser, so that it can be interpreted and executed properly. 
+    Different script types can be used for different programming languages or libraries, depending on the 
+    needs of the project.
+
+    "type module" is a script type introduced in modern versions of JavaScript that allows developers to use 
+    ECMAScript modules (ES modules) in their web applications. When a script is marked with "type module", 
+    it tells the browser that the script contains ES modules and should be treated as a module. This allows 
+    developers to use the import/export syntax for module loading, which provides better encapsulation and 
+    organization of code, and improves performance by allowing the browser to load only the necessary modules.
+    
