@@ -137,6 +137,7 @@ A,  * HMR - Hot Module Replacement
     * https on dev
     * It uses constistent hashing algorithm
     * It is a Zero config bundler
+    * Tree shaking
 
 14, What kind of files we need to put inside .gitignore?
 A,  Anything which we can generate on server will be put inside .gitignore
@@ -166,4 +167,10 @@ A,  In JavaScript, script types refer to the different types of scripts that can
     it tells the browser that the script contains ES modules and should be treated as a module. This allows 
     developers to use the import/export syntax for module loading, which provides better encapsulation and 
     organization of code, and improves performance by allowing the browser to load only the necessary modules.
-    
+
+19, What is tree shaking?
+A,  Tree shaking is a technique used by JavaScript bundlers to eliminate unused code from the final bundle. 
+    It works by analyzing the code and only including the parts that are actually used in the application, 
+    while leaving out any code that is not needed. This helps to reduce the overall file size of the 
+    application, which in turn can improve its performance and load times. Essentially, it "shakes" out 
+    any unnecessary code from the tree of modules being bundled.
