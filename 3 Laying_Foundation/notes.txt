@@ -1,0 +1,68 @@
+1,  What is polyfil?
+A,  It is basically a code which is a replacement for a newer version of code
+
+    Polyfill is a piece of code that enables a web developer to use modern web technologies on older web 
+    browsers that do not support those technologies. It essentially "fills in" the gaps and allows websites 
+    to function properly for all users, regardless of their browser or device.
+
+2,  What is babel?
+A,  Babel is a tool that allows developers to write modern JavaScript code using the latest language features,
+    while still ensuring that the code can run on older browsers and environments that don't support those 
+    features. It does this by transforming the modern code into a backwards-compatible version that can be 
+    run in a wide range of environments. This makes it easier for developers to write code that works for 
+    all users, regardless of their browser or device.
+
+3,  How can we build a perfomant web scalable app?
+A,  To build a performant and scalable web application using React and bundlers, you should follow a few 
+    best practices. Firstly, use a bundler such as Webpack or Rollup to efficiently bundle and optimize your 
+    code. This includes using features such as tree shaking and code splitting to reduce the overall bundle 
+    size and improve load times. Secondly, use a state management library such as Redux or MobX to manage 
+    the state of your application in a scalable way. This allows you to manage complex state across multiple 
+    components without impacting performance. Thirdly, optimize your components by using pure components, 
+    memoization, and React's built-in performance tools such as Profiler and shouldComponentUpdate. Finally, 
+    implement server-side rendering and code splitting to improve the initial load time of your application 
+    and improve SEO. By following these best practices, you can build a scalable and performant web 
+    application using React and bundlers. 
+
+4,  What is diffing algorithm?
+A,  Diffing algorithm is a method of comparing two sets of data or files and identifying the differences 
+    between them. It is commonly used in software development, where developers need to track changes made 
+    to source code or files. The algorithm analyzes the contents of both sets and generates a report 
+    detailing the differences found, including added, removed, or modified content. This allows developers 
+    to easily identify changes between versions of a file or codebase and make informed decisions on how to
+    proceed with their work. In simpler terms, diffing algorithm helps to compare two things and highlight 
+    what has changed between them.
+
+5,  What is JSX ( JavaScript XML ) ?
+A,  JSX is a syntax extension for JavaScript that allows developers to write HTML-like code within their 
+    JavaScript code. It is commonly used with the React library for building user interfaces. With JSX, 
+    developers can write code that looks like HTML, but actually describes the structure and behavior of UI 
+    components. The syntax is then transformed into regular JavaScript by a compiler before it is executed 
+    in the browser. In simpler terms, JSX is a way to write JavaScript code that looks like HTML, making it 
+    easier to create dynamic and interactive user interfaces.
+
+    JSX is a HTML like syntax, it is not HTML inside JavaScript
+
+6,  What are the difference between HTML and JSX ?
+A,  HTML and JSX are both used to define the structure of user interfaces, but there are some key differences
+    between the two. HTML is a markup language used to describe the content and structure of web pages, 
+    while JSX is a syntax extension for JavaScript that allows developers to write HTML-like code within 
+    their JavaScript code.
+
+    One major difference is that HTML is static, meaning that the structure of the page is defined and 
+    doesn't change unless the page is reloaded. JSX, on the other hand, is dynamic and can be updated in 
+    real-time based on user interaction or changes in data.
+
+    Another difference is that HTML uses attributes to define properties of elements, while JSX uses props, 
+    short for properties, to pass data to components. This makes it easier to create reusable components and 
+    to dynamically update the content of the page.
+
+    In summary, while both HTML and JSX are used to define user interfaces, JSX is a more dynamic and flexible
+    tool that allows developers to create reusable and interactive components within their JavaScript code.
+
+7,  What are the advantages of JSX ?
+A,  * Readability
+    * Maintainability
+    * Syntacical sugar for React.createElement
+    * Lot more optimization things
+    
