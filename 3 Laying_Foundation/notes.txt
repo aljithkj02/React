@@ -66,3 +66,31 @@ A,  * Readability
     * Syntacical sugar for React.createElement
     * Lot more optimization things
     
+8,  What is React component?
+A,  A React component is a block of code that describes how a specific part of a user interface should be 
+    displayed and behave. It can be reused multiple times throughout an application and helps to organize 
+    and manage the application's UI logic in a modular and scalable way.
+
+9,  Which are different types of components?
+A,  * Class component
+    * Functional component
+
+10, What is Functional component?
+A,  A functional component is a type of React component that is defined using a JavaScript function. 
+    It takes in props (input data) as arguments and returns JSX (JavaScript XML) to define the 
+    component's UI. Functional components are simpler and more lightweight than class components, 
+    making them easier to write, understand, and test. They are often used for displaying simple, static 
+    content or as part of a larger, more complex application.
+
+11, What is sanitization ?
+A,  Sanitization in React means making sure that the input data entered by users is safe and doesn't contain 
+    harmful code that can harm the application or its users. It's like checking your food before you eat it 
+    to make sure it doesn't have anything dangerous in it. In React, developers use special tools and 
+    techniques to clean up user input and remove any harmful code before it's used in the application. 
+    This helps keep the application and its users safe and protected.
+
+    Sanitization done by JSX
+
+12, What is Component composition?
+A,  If we want to use a componet inside another component, That is basically component composition.
+
