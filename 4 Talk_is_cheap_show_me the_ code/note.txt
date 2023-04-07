@@ -1,0 +1,66 @@
+1, What is config driven UI?
+A, Config-driven UI is a design approach that uses configuration files or data to control the behavior and 
+   appearance of a user interface. Instead of hardcoding all the UI elements and logic in the code, the UI 
+   is generated based on the configuration data, making it easier to modify and maintain. This approach can 
+   be especially useful for creating complex interfaces with many variations or for building reusable UI 
+   components.
+
+2, What is optional chaining?
+A, Optional chaining is a feature introduced in JavaScript that allows you to safely access properties and 
+   methods of an object without worrying about whether they exist or not. It is denoted by the ?. operator 
+   and can be used to avoid errors when accessing nested properties or methods of an object that may be null 
+   or undefined. If the property or method you are trying to access does not exist, the result of the 
+   expression will be undefined, instead of throwing an error. This can make your code more robust and less 
+   error-prone, especially when dealing with complex data structures.
+
+3, What is props?
+A, Props (short for "properties") are a mechanism in React that allow you to pass data from a parent 
+   component to a child component. They are used to customize the behavior or appearance of a component, 
+   by providing input data to the component. Props can be any type of data, such as strings, numbers, 
+   objects, or functions. Once the data is passed as props to the child component, it can be used to render 
+   different output based on the input data. The parent component can update the props at any time, which 
+   will trigger a re-render of the child component with the updated data. This makes it possible to create 
+   dynamic and flexible components that can be reused in different contexts.
+
+4, What is virtual dom?
+A, In React, the virtual DOM is a simplified copy of the actual DOM, which is the tree-like structure that 
+   represents the elements of a webpage.
+
+   The virtual DOM allows React to update the webpage efficiently and quickly, without having to update the 
+   actual DOM directly. When changes are made to the webpage, React updates the virtual DOM first, which is 
+   much faster than updating the actual DOM. Then, it compares the virtual DOM with the previous version to 
+   identify the changes, and finally, it updates only those elements of the actual DOM that need to be 
+   changed.
+
+   By using the virtual DOM, React minimizes the number of changes it needs to make to the actual DOM, 
+   which makes the webpage more responsive and faster to load.
+
+5, Explain reconciliation?
+A, In React, reconciliation is the process of updating the actual DOM based on the changes made to the 
+   virtual DOM.
+
+   When a user interacts with a React component or there is a change in the application state, React 
+   re-renders the component and creates a new virtual DOM tree. Then, it compares the new virtual DOM 
+   tree with the previous one to identify the differences between them. This process is called "diffing."
+
+   After diffing, React updates the actual DOM by applying the changes identified in the virtual DOM. 
+   This process of updating the actual DOM based on the changes in the virtual DOM is called "reconciliation."
+
+   Reconciliation is an efficient way of updating the webpage because it allows React to update only the 
+   parts of the webpage that need to be changed, rather than re-rendering the entire webpage. This makes the 
+   webpage more responsive and faster to load.
+
+6, What is react fiber reconciliation ?
+A, React Fiber is a redesign of the React core algorithm aimed at improving the performance and responsiveness
+   of React applications. React Fiber's reconciliation algorithm breaks the process into smaller, more 
+   manageable chunks that can be spread out over multiple frames, making the process more efficient and 
+   reducing the time between user interactions and the corresponding updates to the UI. This results in more 
+   fluid and natural interactions in the UI, making React applications more responsive and performant.
+
+7, Why don't we use index as key?
+A, Using index as a key in React is not recommended because it can lead to unpredictable behavior and issues 
+   with component state management. Index keys can change when items are added, removed or reordered in a 
+   list, causing React to re-render more components than necessary and potentially resulting in errors or 
+   incorrect UI rendering. It's better to use unique, stable identifiers as keys, such as database IDs or 
+   other properties that are unlikely to change, to ensure consistent and reliable rendering of components 
+   in a React application.
