@@ -1,0 +1,19 @@
+1, What is hooks in react?
+A, In React, a hook is a function that lets you use state and other React features inside functional components. 
+   With hooks, you can manage component state, perform side effects, and reuse stateful logic across multiple
+   components. Think of hooks as a way to "hook into" React's internal processes and add functionality to 
+   your components without needing to write class-based components.
+
+2, What is useState ?
+A, useState is a built-in hook in React that allows you to add state to functional components. With useState, 
+   you can declare a state variable and set its initial value, and then update it using a function provided 
+   by useState. When the state changes, React will re-render the component and update any parts of the UI 
+   that depend on the state. Essentially, useState is a way to manage state in a simpler and more intuitive 
+   way in functional components.
+
+3, What is two way binding? 
+A, Two-way binding is a data binding technique in which changes to a data model are automatically reflected 
+   in the user interface (UI), and vice versa. In simpler terms, when two-way binding is used, any changes 
+   made to the data are automatically updated in the UI, and any changes made in the UI are automatically 
+   reflected back in the data. This technique is commonly used in front-end frameworks like Angular and Vue 
+   to create dynamic, reactive applications.
