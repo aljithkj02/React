@@ -1,22 +1,11 @@
-import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { API_URL } from '../utils/constants';
 import Shimmer from './Shimmer';
+import useProductInfo from '../utils/useProductInfo';
 
 const ProductDetails = () => {
     const { prodId } = useParams();
-    const [productInfo, setProductInfo] = useState({});
-
-    useEffect(() => {
-        fetchProductData();
-    }, []);
-
-    const fetchProductData = async () => {
-        const data = await fetch(`${API_URL}/${prodId}`);
-        const json = await data.json();
-        console.log(json)
-        setProductInfo(json);
-    }
+    
+    const productInfo = useProductInfo(prodId);
 
     const { brand, title, description, thumbnail, price, rating } = productInfo;
 

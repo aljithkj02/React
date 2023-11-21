@@ -1,21 +1,9 @@
-import React, { useEffect, useState } from 'react'
-import { API_URL } from '../utils/constants';
 import Product from './Product';
 import Shimmer from './Shimmer';
+import useProducts from '../utils/useProducts';
 
 const Body = () => {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    fetchProducts();
-  }, [])
-
-  const fetchProducts = async () => {
-    const data = await fetch(API_URL);
-    const json = await data.json();
-    console.log(json);
-    setProducts(json.products);
-  }
+  const products = useProducts(); 
 
   return (
     <div id="body">
