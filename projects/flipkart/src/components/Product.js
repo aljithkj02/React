@@ -5,7 +5,7 @@ const Product = ({ thumbnail, brand, title, price, id }) => {
   const navigate = useNavigate();
   
   return (
-    <div className='p-4 shadow-xl bg-neutral-300 rounded-md' onClick={() => navigate(`/product/${id}`)}>
+    <div className='p-4 shadow-xl bg-neutral-300 rounded-md hover:bg-gray-300 hover:shadow-2xl duration-200' onClick={() => navigate(`/product/${id}`)}>
         <div >
             <img src={thumbnail} alt="Product image" className='rounded-md w-full h-52 sm:h-40 lg:h-48' />
         </div>
