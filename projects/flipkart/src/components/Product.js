@@ -5,12 +5,12 @@ const Product = ({ thumbnail, brand, title, price, id }) => {
   const navigate = useNavigate();
   
   return (
-    <div id="product" onClick={() => navigate(`/product/${id}`)}>
-        <div id="prod-img-container">
-            <img src={thumbnail} alt="Product image" />
+    <div className='p-4 shadow-xl bg-neutral-300 rounded-md' onClick={() => navigate(`/product/${id}`)}>
+        <div >
+            <img src={thumbnail} alt="Product image" className='rounded-md w-full h-52 sm:h-40 lg:h-48' />
         </div>
-        <div id="product-info">
-            <p>{ brand }</p>
+        <div >
+            <p className='font-bold text-lg my-2'>{ brand }</p>
             <p>{ title }</p>
             <h4>${ price }</h4>
         </div>
