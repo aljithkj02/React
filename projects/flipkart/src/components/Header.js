@@ -2,10 +2,12 @@ import { Link } from "react-router-dom";
 import { LOGO_URL } from "../utils/constants";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import { useMyContext } from "../context";
+import { useSelector } from "react-redux";
 
 const Header = () => {
     const onlineStatus = useOnlineStatus();
     const { user, handleChange } = useMyContext();
+    const { items } = useSelector(data => data.cart);
 
     return (
         <nav>
@@ -27,7 +29,8 @@ const Header = () => {
                             <li>Online: { onlineStatus ? "✅" : "🛑"}</li>
                             <li><Link to='/'> Home </Link></li>
                             <li><Link to='/about'> About Us </Link></li>
-                            <li><Link to='/contact'> Contact </Link></li>
+                            {/* <li><Link to='/contact'> Contact </Link></li> */}
+                            <li><Link to='/cart'> Cart ({ items.length }) </Link></li>
                             <li className="text-orange-700 font-bold"> { user } </li>
                         </ul>   
                     </div>

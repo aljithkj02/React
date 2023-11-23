@@ -1,11 +1,15 @@
 import { useParams } from 'react-router-dom'
 import Shimmer from './Shimmer';
 import useProductInfo from '../utils/useProductInfo';
+import { useGetProductsDetailsQuery } from '../apis/products';
 
 const ProductDetails = () => {
     const { prodId } = useParams();
     
-    const productInfo = useProductInfo(prodId);
+    // const productInfo = useProductInfo(prodId);
+    const { data, error, isLoading } = useGetProductsDetailsQuery(prodId);
+
+    const productInfo = data || {};
 
     const { brand, title, description, thumbnail, price, rating } = productInfo;
 
