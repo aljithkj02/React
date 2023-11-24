@@ -31,7 +31,7 @@ const Layout = () => {
     )
 }
 
-const router = createBrowserRouter([
+export const router = createBrowserRouter([
     {
         path: '/',
         element: <Layout />,
