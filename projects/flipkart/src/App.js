@@ -7,26 +7,31 @@ import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
 import About from './components/About';
 import Contact from './components/Contact';
 import { MyContextProvider } from './context';
+import { Provider } from 'react-redux';
+import appStore from './redux/store';
+import Cart from './components/Cart';
 // import ProductDetails from './components/ProductDetails';
 
 const ProductDetails = lazy(() => import('./components/ProductDetails'));
 
 const Layout = () => {
     return (
-        <MyContextProvider>
-            <div>
-                <Header />
-                <div className='pt-20 bg-purple-100'>
-                    <div className='w-[90%] mx-auto'>
-                        <Outlet />
+        <Provider store={appStore}>
+            <MyContextProvider>
+                <div>
+                    <Header />
+                    <div className='pt-20 bg-purple-100'>
+                        <div className='w-[90%] mx-auto'>
+                            <Outlet />
+                        </div>
                     </div>
                 </div>
-            </div>
-        </MyContextProvider>
+            </MyContextProvider>
+        </Provider>
     )
 }
 
-const router = createBrowserRouter([
+export const router = createBrowserRouter([
     {
         path: '/',
         element: <Layout />,
@@ -43,6 +48,10 @@ const router = createBrowserRouter([
             {
                 path: '/contact',
                 element: <Contact />
+            },
+            {
+                path: '/cart',
+                element: <Cart />
             },
             {
                 path: '/product/:prodId',
